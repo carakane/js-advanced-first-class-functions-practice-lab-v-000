@@ -16,7 +16,7 @@ function driversByRevenue(drivers) {
 
 function driversByName(drivers) {
   let drivers2 = drivers.slice()
-  drivers2.sort(function (a, b) {
+  return drivers2.sort(function (a, b) {
     return a[name].localeCompare(b.name)
   })
 }

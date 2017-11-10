@@ -20,3 +20,9 @@ function driversByName(drivers) {
     return a.name.localeCompare(b.name)
   })
 }
+
+function totalRevenue(drivers) {
+  drivers.reduce(function (sum, revenue) {
+    return sum + revenue.revenue
+  }, 0)
+}

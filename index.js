@@ -8,7 +8,7 @@ function logDriversByHometown(drivers, location) {
 }
 
 function driversByRevenue(drivers) {
-  let drivers2 = Object.assign({}, {...drivers})
+  let drivers2 = drivers
    return drivers2.sort(function (a, b) {
     return a.revenue - b.revenue
   })

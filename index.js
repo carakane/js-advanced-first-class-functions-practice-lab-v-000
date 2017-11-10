@@ -8,7 +8,7 @@ function logDriversByHometown(drivers, location) {
 }
 
 function driversByRevenue(drivers) {
-  let drivers2 = drivers
+  let drivers2 = drivers.slice()
    return drivers2.sort(function (a, b) {
     return a.revenue - b.revenue
   })
